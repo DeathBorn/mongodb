@@ -1,0 +1,100 @@
+2015-11-21T22:57:20.330+0000 I JOURNAL  [initandlisten] journal dir=/data/rs3/journal
+2015-11-21T22:57:20.330+0000 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-11-21T22:57:20.355+0000 I JOURNAL  [durability] Durability thread started
+2015-11-21T22:57:20.355+0000 I CONTROL  [initandlisten] MongoDB starting : pid=2371 port=27019 dbpath=/data/rs3 64-bit host=vagrant-ubuntu-vivid-64
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] 
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] 
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] 
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] 
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] db version v3.0.7
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] git version: 6ce7cbe8c6b899552dadd907604559806aa2e9bd
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] build info: Linux ip-10-229-88-125 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-11-21T22:57:20.356+0000 I CONTROL  [initandlisten] options: { net: { port: 27019 }, processManagement: { fork: true }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "/data/rs3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "3.log" } }
+2015-11-21T22:57:20.357+0000 I INDEX    [initandlisten] allocating new ns file /data/rs3/local.ns, filling with zeroes...
+2015-11-21T22:57:20.355+0000 I JOURNAL  [journal writer] Journal writer thread started
+2015-11-21T22:57:20.379+0000 I STORAGE  [FileAllocator] allocating new datafile /data/rs3/local.0, filling with zeroes...
+2015-11-21T22:57:20.379+0000 I STORAGE  [FileAllocator] creating directory /data/rs3/_tmp
+2015-11-21T22:57:20.380+0000 I STORAGE  [FileAllocator] done allocating datafile /data/rs3/local.0, size: 16MB,  took 0 secs
+2015-11-21T22:57:20.383+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-11-21T22:57:20.383+0000 I NETWORK  [initandlisten] waiting for connections on port 27019
+2015-11-21T22:57:51.169+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46655 #1 (1 connection now open)
+2015-11-21T22:57:51.180+0000 I NETWORK  [conn1] end connection 127.0.0.1:46655 (0 connections now open)
+2015-11-21T22:57:51.182+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46657 #2 (1 connection now open)
+2015-11-21T22:57:51.198+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46663 #3 (2 connections now open)
+2015-11-21T22:57:51.199+0000 I REPL     [WriteReplSetConfig] Starting replication applier threads
+2015-11-21T22:57:51.200+0000 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "m101", version: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2015-11-21T22:57:51.200+0000 I REPL     [ReplicationExecutor] This node is localhost:27019 in the config
+2015-11-21T22:57:51.201+0000 I REPL     [ReplicationExecutor] transition to STARTUP2
+2015-11-21T22:57:51.201+0000 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state STARTUP2
+2015-11-21T22:57:51.201+0000 I REPL     [rsSync] ******
+2015-11-21T22:57:51.202+0000 I REPL     [rsSync] creating replication oplog of size: 64MB...
+2015-11-21T22:57:51.202+0000 I STORAGE  [FileAllocator] allocating new datafile /data/rs3/local.1, filling with zeroes...
+2015-11-21T22:57:51.202+0000 I NETWORK  [conn3] end connection 127.0.0.1:46663 (1 connection now open)
+2015-11-21T22:57:51.203+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46665 #4 (2 connections now open)
+2015-11-21T22:57:51.204+0000 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state STARTUP2
+2015-11-21T22:57:51.287+0000 I STORAGE  [FileAllocator] done allocating datafile /data/rs3/local.1, size: 128MB,  took 0.084 secs
+2015-11-21T22:57:51.297+0000 I REPL     [rsSync] ******
+2015-11-21T22:57:51.297+0000 I REPL     [rsSync] initial sync pending
+2015-11-21T22:57:51.298+0000 I REPL     [rsSync] no valid sync sources found in current replset to do an initial sync
+2015-11-21T22:57:52.300+0000 I REPL     [rsSync] initial sync pending
+2015-11-21T22:57:52.301+0000 I REPL     [rsSync] no valid sync sources found in current replset to do an initial sync
+2015-11-21T22:57:53.201+0000 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state SECONDARY
+2015-11-21T22:57:53.301+0000 I REPL     [rsSync] initial sync pending
+2015-11-21T22:57:53.302+0000 I REPL     [ReplicationExecutor] syncing from: localhost:27017
+2015-11-21T22:57:53.306+0000 I REPL     [rsSync] initial sync drop all databases
+2015-11-21T22:57:53.307+0000 I STORAGE  [rsSync] dropAllDatabasesExceptLocal 1
+2015-11-21T22:57:53.308+0000 I REPL     [rsSync] initial sync clone all databases
+2015-11-21T22:57:53.309+0000 I REPL     [rsSync] initial sync data copy, starting syncup
+2015-11-21T22:57:53.310+0000 I REPL     [rsSync] oplog sync 1 of 3
+2015-11-21T22:57:53.313+0000 I REPL     [rsSync] oplog sync 2 of 3
+2015-11-21T22:57:53.313+0000 I REPL     [rsSync] initial sync building indexes
+2015-11-21T22:57:53.314+0000 I REPL     [rsSync] oplog sync 3 of 3
+2015-11-21T22:57:53.316+0000 I REPL     [rsSync] initial sync finishing up
+2015-11-21T22:57:53.317+0000 I REPL     [rsSync] replSet set minValid=5650f6ef:1
+2015-11-21T22:57:53.318+0000 I REPL     [rsSync] initial sync done
+2015-11-21T22:57:53.327+0000 I REPL     [ReplicationExecutor] transition to RECOVERING
+2015-11-21T22:57:53.329+0000 I REPL     [ReplicationExecutor] transition to SECONDARY
+2015-11-21T22:57:54.203+0000 I REPL     [ReplicationExecutor] could not find member to sync from
+2015-11-21T22:57:55.191+0000 I REPL     [ReplicationExecutor] replSetElect voting yea for localhost:27017 (0)
+2015-11-21T22:57:55.202+0000 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state PRIMARY
+2015-11-21T22:57:55.205+0000 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state SECONDARY
+2015-11-21T22:58:21.208+0000 I NETWORK  [conn2] end connection 127.0.0.1:46657 (1 connection now open)
+2015-11-21T22:58:21.209+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46669 #5 (3 connections now open)
+2015-11-21T22:58:21.216+0000 I NETWORK  [conn4] end connection 127.0.0.1:46665 (1 connection now open)
+2015-11-21T22:58:21.221+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46673 #6 (2 connections now open)
+2015-11-21T22:58:51.226+0000 I NETWORK  [conn5] end connection 127.0.0.1:46669 (1 connection now open)
+2015-11-21T22:58:51.226+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46675 #7 (3 connections now open)
+2015-11-21T22:58:51.239+0000 I NETWORK  [conn6] end connection 127.0.0.1:46673 (1 connection now open)
+2015-11-21T22:58:51.240+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46679 #8 (2 connections now open)
+2015-11-21T22:59:21.241+0000 I NETWORK  [conn7] end connection 127.0.0.1:46675 (1 connection now open)
+2015-11-21T22:59:21.242+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46681 #9 (3 connections now open)
+2015-11-21T22:59:21.254+0000 I NETWORK  [conn8] end connection 127.0.0.1:46679 (1 connection now open)
+2015-11-21T22:59:21.255+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:46683 #10 (2 connections now open)
+2015-11-21T22:59:49.220+0000 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2015-11-21T22:59:49.222+0000 I REPL     [signalProcessingThread] Stopping replication applier threads
+2015-11-21T22:59:49.357+0000 I NETWORK  [conn9] end connection 127.0.0.1:46681 (1 connection now open)
+2015-11-21T22:59:49.372+0000 I CONTROL  [signalProcessingThread] now exiting
+2015-11-21T22:59:49.372+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2015-11-21T22:59:49.372+0000 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2015-11-21T22:59:49.372+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2015-11-21T22:59:49.372+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27019.sock
+2015-11-21T22:59:49.372+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2015-11-21T22:59:49.372+0000 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2015-11-21T22:59:49.372+0000 I STORAGE  [signalProcessingThread] shutdown: waiting for fs preallocator...
+2015-11-21T22:59:49.373+0000 I STORAGE  [signalProcessingThread] shutdown: final commit...
+2015-11-21T22:59:49.373+0000 I JOURNAL  [signalProcessingThread] journalCleanup...
+2015-11-21T22:59:49.373+0000 I JOURNAL  [signalProcessingThread] removeJournalFiles
+2015-11-21T22:59:49.375+0000 I NETWORK  [conn10] end connection 127.0.0.1:46683 (0 connections now open)
+2015-11-21T22:59:49.376+0000 I JOURNAL  [signalProcessingThread] Terminating durability thread ...
+2015-11-21T22:59:49.475+0000 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-11-21T22:59:49.475+0000 I JOURNAL  [durability] Durability thread stopped
+2015-11-21T22:59:49.476+0000 I STORAGE  [signalProcessingThread] shutdown: closing all files...
+2015-11-21T22:59:49.476+0000 I STORAGE  [signalProcessingThread] closeAllFiles() finished
+2015-11-21T22:59:49.476+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2015-11-21T22:59:49.477+0000 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
